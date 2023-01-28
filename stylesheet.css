@@ -1,0 +1,106 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(240, 240, 240)
+}
+#header-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    border-bottom: 3px solid black;
+}
+.board {
+    width: 500px;
+    height: 500px;
+    display: grid;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+#mode {
+    align-items: flex-start;
+    margin: 20px;
+    font-size: 25px
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0px
+}
+.inputs {
+    display: flex;
+    justify-content: space-between;
+}
+#black-btn {
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 55%;
+    font-size: 20px;
+    padding: 10px
+}
+#eraser-btn {
+    border: none;
+    background-color: white;
+    border-radius: 55%;
+    padding: 10px;
+    font-size: 20px;
+}
+#rgb-btn {
+    border: none;
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,154,0,1) 10%, rgba(208,222,33,1) 20%, rgba(79,220,74,1) 30%, rgba(63,218,216,1) 40%, rgba(47,201,226,1) 50%, rgba(28,127,238,1) 60%, rgba(95,21,242,1) 70%, rgba(186,12,248,1) 80%, rgba(251,7,217,1) 90%, rgba(255,0,0,1) 100%);
+    border-radius: 55%;
+    padding: 10px;
+    font-size: 20px;
+    color: white
+}
+#reset-btn {
+    border: none;
+    background-color: red;
+    border-radius: 55%;
+    padding: 10px;
+    font-size: 20px;
+    color: white
+}
+.inputs {
+    display: flex;
+    align-items: baseline;
+    flex-direction: row;
+}
+#input {
+    width: 380px;
+    border: none;
+    height: 20px;
+}
+#setsize-btn {
+    border: none;
+    border-radius: 55%;
+    padding: 10px;
+    font-size: 15px;
+    color: black;
+    font-weight: 600;
+}
+#black-btn:hover {
+    font-size: 22px;
+    text-shadow: 1px 1px white;
+}
+#eraser-btn:hover {
+    font-size: 22px;
+    text-shadow: 1px 1px black;
+}
+#rgb-btn:hover {
+    font-size: 22px;
+    text-shadow: 2px 2px black;
+}
+#reset-btn:hover {
+    font-size: 22px;
+    text-shadow: 2px 2px black;
+}
+#setsize-btn:hover {
+    font-size: 16px;
+    text-shadow: 2px 2px white;
+}

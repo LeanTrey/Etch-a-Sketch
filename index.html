@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-a-Sketch</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <div id="header-div">
+        <h1>Etch-a-Sketch</h1>
+    </div>
+</head>
+<body>
+    <div class="container">
+    <div id="mode">
+    <div class="mode">Mode: Coloring</div>
+    </div>
+    <div class="content">
+        <div class="board"></div>
+        <div class="buttons">
+            <button id="black-btn" onclick="changeColor('black')">Black</button>
+            <button id="eraser-btn" onclick="changeColor('white')">Eraser</button>
+            <button id="rgb-btn" onclick="changeColor('RGB')">RGB</button>
+            <button id="reset-btn" onclick="resetBoard()">Reset</button>
+        </div>
+        <div class="inputs">
+            <input id="input" type="text" placeholder="Size of Board" value="16" onchange="changeSize(this.value)" />
+            <button id="setsize-btn">Set Size</button>
+        </div>
+    </div>
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
